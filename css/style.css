@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav a{
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  nav a:visited{
+    color: hotpink;
+  }
+  
+  nav a:hover{
+  color: black;
+  }
+  

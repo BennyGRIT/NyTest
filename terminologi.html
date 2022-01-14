@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Terminologi</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="terminologi.html">Terminologi</a>
+        <a href="terminologi2nd.html">Terminologi 2nd</a>
+    </nav>
+
+<main> <h1>Förklaringar på termer:</h1></main>
+
+<div>
+    <p><h2>Repository</h2></p>
+    <p>Ett repository är den huvudsakliga komponenten som spårar förändringar i ditt projekt. Den komponent hittar man under ./git i roten av ditt projekt. Genom att titta på den här katalogen kan Git manipulera koden som du har valt att spåra. Tar du bort ./git från ditt projekt förlorar du all spårning av ditt projekt i den instansen (om du har skickat förändringar till en server, finns de förändringarna som du skickat sparade där). </p>
+
+    <br>
+    <div>
+    <p><h2>Branch</h2></p>
+    <p></p>
+</div>Git använder sig av något som kallas branches (eller grenar) för att spåra förändringar. Huvudbranchen brukar kallas för main (eller master på aningen äldre system, läs mer här om varför). Det är det huvudsakliga projektet. Alla andra branches deriverar sin sanning från main vilket innebär att när du skapar en ny branch gör du det från main oftast.
+
+Branching är främst till för att hålla main-branchen i ett fungerande stadie. Målet är att kunna klona ditt repo och veta att koden som laddas ner faktiskt fungerar.
+
+Därför skapar du branches för din egen utveckling. Säg att du behöver lägga till en funktion (eller feature) till ditt program eller tjänst. Istället för att börja ändra i main-branchen skapar du en ny branch från main för att bevara mains integritet. På den här nya branchen kan du commita dina förändringar, utan att påverka main direkt. Därefter förenar du dem (merge) och låter main absorbera den nya branchen.  
+
+Det är lite som en tågräls där ett tåg fortsätter rakt fram och ett annat tåg tar av till ett annat spår för att få ny last och sen förenar sig med det tidigare tåget lite längre fram:
+</div>
+
+<br>
+
+<div>
+    <p><h2>Clone</h2></p>
+    <p>Clone innebär att du “klonar” eller kopierar ett repository. Du kan exempelvis skriva “”git clone https://github.com/{username}/myrepo” för att spara ned en lokal kopia av repot som heter “myrepo”.  Bra va?
+    </p>
+</div>
+
+</body>
+</html>
