@@ -16,49 +16,58 @@
         <a href="terminologi.html">Terminologi</a>
         <a href="terminologi2nd.html">Terminologi 2nd</a>
         <a href="terminologi3rd.html">Terminologi 3rd</a>
-
+        <a href="repository.html">Repository</a>
     </nav>
 
     <main>
-        <h1>Förklaringar på termer:</h1>
+        <h1>Förklaringar på termer #3:</h1>
     </main>
 
     <div>
         <p>
-        <h2>commit</h2>
+        <h2>Working Directory</h2>
         </p>
-        <p>Git beskriver ditt repository som en serie av ”commits”. En commit ses som en följd av ändringar till filer
-            (tilläggningar/borttagningar av filer, uppdate- ringar av innehåll) och ett meddelande. Meddelandet ska vara
-            beskrivande av vilka ändringar som gjorts.
+        <p>I working directory gör du alla ändringar, som att lägga till nya filer (märks som untracked), ändra i filer (märks som modified) och ta bort filer (märks som deleted). Genom att använda git status kan du få aktuell status för ditt working directory, och se om det finns ändringar som behöver läggas till staging area.
         </p>
 
         <br>
 
         <div>
             <p>
-            <h2>Push</h2>
+            <h2>Staging</h2>
             </p>
             <p></p>
-        </div>Git Push används för att skicka upp sina commits till servern.
+        </div>Efter att ändringar gjorts i "working directory" markerar detta kommando ändringar som gjorts som staged, innebärande att de är redo för en "commit". Med kommandot git status kan du kontrollera om det finns ändringar som är "staged" eller inte.
     </div>
 
     <div>
         <p>
-        <h2>Pull</h2>
+        <h2>HEAD</h2>
         </p>
         <p></p>
-    </div>Git Pull används för att hämta hemsina commits från servern.
+    </div>Git sparar alla ändringarna i en tidslinje som det går att spola framåt och bakåt i. Tillståndet som ett repository för tillfället står på kallas för HEAD (som i “läshuvud”).
 </div>
 
 
-    <br>
+<br>
 
-    <div>
-        <p>
-        <h2>Merge</h2>
-        </p>
-        <p>Det används för att skapa, modifiera, ta bort grenar, filer eller arkiv utan konflikter. Det kan användas för att slå samman olika versioner av koden. Det hjälper också till att göra ändringar och kassera fjärrgrenar och samtidigt undvika konflikter.</p>
-    </div>
+<div>
+    <p>
+    <h2>Revert</h2>
+    </p>
+    <p>Både kommandona git revertoch git resetkommandona ångrar tidigare åtaganden. Men om du redan har tryckt på ditt åtagande till ett fjärrförvar rekommenderas det att du inte använder det git reseteftersom det skriver om historien om åtaganden. Detta kan göra det svårt att arbeta på ett arkiv med andra utvecklare och upprätthålla en konsekvent historia om åtaganden.
+
+        Istället är det bättre att använda git revert, vilket ångrar ändringarna som gjordes av ett tidigare åtagande genom att skapa ett helt nytt engagemang, allt utan att ändra historiken för åtaganden.</p>
+</div>
+
+<br>
+
+<div>
+    <p>
+    <h2>Reset</h2>
+    </p>
+    <p>Med git resetkommandot kan du återställa ditt nuvarande huvud till ett angivet tillstånd. Du kan återställa tillståndet för specifika filer såväl som en hel gren. Det här är användbart om du inte har gjort ditt engagemang till GitHub eller ett annat fjärrförvar än.</p>
+</div>
 
 </body>
 
