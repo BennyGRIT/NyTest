@@ -1,8 +1,12 @@
+body{
+  background-color: aqua;
+}
 nav{
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
+    background-color: blue;
   }
   
   nav a{
@@ -17,4 +21,12 @@ nav{
   
   nav a:hover{
   color: black;
+  }
+
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
