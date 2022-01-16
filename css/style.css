@@ -1,10 +1,7 @@
 body{
   background-color: aqua;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> fr-all-terminology
 nav{
     display: flex;
     justify-content: center;
@@ -26,17 +23,7 @@ nav{
   nav a:hover{
   color: black;
   }
-<<<<<<< HEAD
 
-  h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  h2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-=======
-  
 h1{
   font-family: fantasy;
 }
@@ -44,4 +31,3 @@ h1{
 h2{
   font-family: monospace;
 }
->>>>>>> fr-all-terminology
